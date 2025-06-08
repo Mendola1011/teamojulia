@@ -56,13 +56,20 @@ h1 {
   margin-top: 1em;
 }
 
-.spotify-wrapper {
+.spotify-embed {
   margin-top: 2em;
   border-radius: 12px;
   overflow: hidden;
-  max-width: 700px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+
+/* Responsividade específica para o player */
+@media (max-width: 768px) {
+  .spotify-embed iframe {
+    height: 300px;
+  }
+}
+
 
 .message {
   font-size: 1.1em;
